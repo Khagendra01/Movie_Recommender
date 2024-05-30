@@ -29,6 +29,7 @@ similarity = pickle.load(open('model/similarity.pkl','rb'))
 
 # Customize the header
 st.markdown("<h1 style='text-align: center; color: blue;'>Movie Recommender System</h1>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='text-align: center;'><a href='https://next-book-recommender-857850e7f32e.herokuapp.com/' target='_blank'>Go to Book Recommender </a></h2>", unsafe_allow_html=True)
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
